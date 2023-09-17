@@ -290,14 +290,14 @@ const MainForm = () => {
             </div>
             <div
               className={`flex items-center pl-4 border border-${
-                category2 === "kepatuhan" ? "yellow" : "gray"
+                category2 === "kapatuhan" ? "yellow" : "gray"
               }-400 rounded dark:border-gray-700`}
             >
               {" "}
               <input
                 type="radio"
-                value={"kepatuhan"}
-                checked={setCategory2 === "kepatuhan"}
+                value={"kapatuhan"}
+                checked={setCategory2 === "kapatuhan"}
                 onChange={handleOptionChange2}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
               />

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 
 const Nonconformity = () => {
   const [reason, setReason] = useState("");
+
+  const navigate = useNavigate();
 
   const handleOptionChange = (e) => {
     setReason(e.target.value);
@@ -14,6 +17,8 @@ const Nonconformity = () => {
   const onNext = () => {
     navigate("/form/saran");
   };
+
+  console.log(reason);
 
   return (
     <div>
@@ -97,7 +102,7 @@ const Nonconformity = () => {
           onClick={onNext}
           className="text-white font-semibold bg-yellow-300  hover:bg-yellow-400 w-full rounded-lg py-2"
         >
-          Kirim
+          Lanjut
         </button>
       </form>
     </div>
