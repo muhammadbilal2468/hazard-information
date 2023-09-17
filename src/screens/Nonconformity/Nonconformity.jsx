@@ -11,8 +11,8 @@ const Nonconformity = () => {
     window.history.back();
   };
 
-  const onSubmit = () => {
-    alert("Berhasil");
+  const onNext = () => {
+    navigate("/form/saran");
   };
 
   return (
@@ -94,7 +94,7 @@ const Nonconformity = () => {
         </div>
         <button
           type="submit"
-          onClick={onSubmit}
+          onClick={onNext}
           className="text-white font-semibold bg-yellow-300  hover:bg-yellow-400 w-full rounded-lg py-2"
         >
           Kirim
