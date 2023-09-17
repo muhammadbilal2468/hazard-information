@@ -33,21 +33,21 @@ const MainForm = () => {
   const onNext = () => {
     if (
       (category === "saran" && category2 === "kesehatan") ||
-      category2 === "keselamatan" ||
-      category2 === "lingkungan" ||
-      category2 === "eksternal" ||
-      category2 === "kapatuhan"
+      (category === "saran" && category2 === "keselamatan") ||
+      (category === "saran" && category2 === "lingkungan") ||
+      (category === "saran" && category2 === "eksternal") ||
+      (category === "saran" && category2 === "kapatuhan")
     ) {
       navigate("/form/saran");
     } else if (
       (category === "ketidaksesuaian" && category2 === "kesehatan") ||
-      category2 === "keselamatan" ||
-      category2 === "lingkungan"
+      (category === "ketidaksesuaian" && category2 === "keselamatan") ||
+      (category === "ketidaksesuaian" && category2 === "lingkungan")
     ) {
       navigate("/form/ketidaksesuaian");
     } else if (
       (category === "ketidaksesuaian" && category2 === "eksternal") ||
-      category2 === "kapatuhan"
+      (category === "ketidaksesuaian" && category2 === "kapatuhan")
     ) {
       navigate("/form/saran");
     }
